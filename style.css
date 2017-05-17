@@ -1,0 +1,43 @@
+
+body {
+    font-family: Avenir, sans-serif;
+    color: white;
+    background-color: #141829;
+}
+
+#content{
+    height: auto;
+    margin:auto;
+}
+
+#content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#name {
+    font-family: 'Muli', sans-serif;
+    background: blue;
+    float:left;
+    width: 50%;
+}
+
+#firstname{
+    font-weight: 300;
+    font-size: 50px;
+    display: inline-block;
+   
+}
+
+#lastname{
+    font-weight: 600;
+    font-size: 50px;
+    display: inline-block;
+}
+
+#info {
+    float: right;
+    width: 50%;
+    background: red;
+}
