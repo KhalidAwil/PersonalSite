@@ -1,43 +1,52 @@
 
-body {
+html, body{
     font-family: Avenir, sans-serif;
     color: white;
     background-color: #141829;
+    height: 100%;
 }
 
 #content{
-    height: auto;
-    margin:auto;
+    height: 100%;
 }
 
-#content:after {
+#content:after{
   content: "";
   display: table;
   clear: both;
 }
 
-#name {
+#me{
     font-family: 'Muli', sans-serif;
     background: blue;
     float:left;
     width: 50%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+#name{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #firstname{
     font-weight: 300;
-    font-size: 50px;
+    font-size: 50px; 
     display: inline-block;
-   
+    margin-right: 2%;
 }
 
 #lastname{
     font-weight: 600;
     font-size: 50px;
-    display: inline-block;
+    display: inline-block
 }
 
-#info {
+#info{
     float: right;
     width: 50%;
     background: red;
+    height: 100%;
 }
