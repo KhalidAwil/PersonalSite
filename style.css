@@ -50,3 +50,19 @@ html, body{
     background: red;
     height: 100%;
 }
+
+#title{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    background: green;
+    margin: auto;
+    display: table;
+}
+
+#description{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
