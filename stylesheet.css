@@ -1,49 +1,63 @@
 html{
     height: 100%;
     font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
     /* font-family: 'PT Sans', sans-serif; */
     /* font-family: 'Quicksand', sans-serif; */
 }
 
 body{
     height: 100%;
-    background: #7b88ff;
+    background: hsl(218, 74%, 24%);
     color: white;
+    text-transform: capitalize
 }
 
 #name{
-    height: 100%;
-    flex-grow: 1; 
-    justify-content: center; 
+    color: #f2f7ff;
+    /* height: 100%; */
     align-items: center;
     display: flex;
-    font-size: 50pt;
+    /* flex-direction: column; */
+    font-size: 60pt;
     font-weight: 100;
-    text-align: center;
+    text-align: left;
+    /* background: tomato; */
 }
 
 #firstname{
-    font-weight: 300;
+    font-weight: 100;
+    /* margin-left: 30px; */
+    font-size: 55pt;
+    /* font-size: 50pt; */
 }
 
 #lastname{
-    font-weight: bold;
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 55pt;
+    /* font-size: 70pt; */
 }
 
 #title{
-    height: 100%;
-    flex-grow: 1; 
+    /* height: 100%;  */
     justify-content: center; 
     align-items: center;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-left: 50px;
+}
+
+#divider{
+    width: 1px;
+    height: 180px;
+    background: #f7b633;
+    margin-left: 50px;
 }
 
 #links{
     margin-top: 30px;
-    border: 2px solid skyblue;
-    padding: 20px;
     width: 40%;
     display: flex;
     justify-content: space-around;
@@ -53,30 +67,39 @@ body{
 }
 
 #position{
+    font-size: 35pt;
+}
+
+#dark-blue-line{
+    width: 100%;
+    height: 20px; 
+    margin-bottom: 2px;
+    background: #2d4ea1;
+}
+
+#blue-line{
+    width: 100%;
+    height: 10px; 
+    margin-bottom: 2px;
+    background: #4271e9;
+}
+
+#yellow-line{
+    width: 100%;
+    height: 5px; 
+    margin-bototm: 2px;
+    background: #f7b633;
+}
+
+i.fab,
+i.fas, 
+i.far {
+    opacity: 0.7;
     font-size: 20pt;
-    font-weight: 100;
 }
 
-#line{
-    width: 1px; 
-    height: 80%; 
-    align-self: center;
-    background: skyblue;
-    opacity: 0.5;
-}
-
-#button{
-    
-}
-
-#dropdown{
-    display: none;
-}
-
-#display:hover{
-    display: block;
-}
-
-@media screen {
-    
+i.fab:hover, 
+i.fas:hover, 
+i.far:hover{
+    opacity: 1;
 }
