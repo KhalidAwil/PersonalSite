@@ -1,0 +1,144 @@
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+#navigation{
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.navigation-item{
+    font-size: 14pt;
+    padding: 2px;
+    float: right;
+    color: #888;
+    margin-right: 5px;
+    font-weight: 300;
+    -webkit-transition: color 0.15s; /* Safari */
+    transition: color 0.15s;
+    transition-timing-function: ease-in-out;
+    /* font-weight: bold; */
+}
+
+.navigation-item:hover{
+    color: #333;
+    cursor: pointer;
+    -webkit-transition: background color 0.15s; /* Safari */
+    transition: background color 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.navigation-item-selected{
+    border-bottom: 2px solid hsl(218, 42%, 46%);
+    font-weight: bold;
+    color: black;
+}
+
+#content{
+    /* width: 100%;
+    height: 100%; */
+    /* background: hsl(218, 74%, 24%);
+    color: white; */
+    color: black
+}
+
+#content-title{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.spacer{
+    width: 50px;
+}
+
+.resume-item{
+    width: 100%;
+    display: flex;
+    min-height: 200px;
+}
+
+.dot{
+    border-radius: 50%;
+    border: 3px solid hsl(218, 42%, 46%);
+    width: 12px;
+    height: 12px;
+    background: white;
+    /* border: 2px solid hsl(218, 50%, 63%); */
+}
+
+.line{
+    height: 100%;
+    background: hsl(218, 50%, 63%);
+    width: 3px;
+    margin-left: 8px;
+}
+
+.resume-item-content{
+    padding: 15px;
+    margin-left: -20px;
+}
+
+.resume-item-company{
+    height: 30px;
+    font-size: 18pt;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.resume-item-position{
+    font-weight: 100;
+}
+
+.resume-item-city{
+    font-weight: 100;
+    font-style: italic;
+}
+
+.resume-item-duration{
+    font-size: 10.5pt;
+    margin-bottom: 5px;
+}
+
+.resume-item-desc{
+    margin-bottom: 5px;
+    max-width: 600px;
+}
+
+.resume-item-desc ul{
+    margin-left: -18px;
+}
+
+.resume-item-desc ul li{
+    margin-bottom: 15px;
+    font-size: 10.5pt;
+}
+
+.resume-item-tech{
+    margin-bottom: 5px;
+    font-size: 10pt;
+}
+
+.tech-item{
+    border-radius: 20px;
+    padding: 6px;
+    background: hsl(218, 42%, 46%);
+    margin-right: 5px;
+    float: left;
+    color: white;
+}
