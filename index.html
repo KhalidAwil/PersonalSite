@@ -11,33 +11,29 @@
     </head>
     <body>
         <!--Navigation-->
-        <div>
-
+        <div id="navigation">
+            <div style="width: 250px; margin-right: 50px; float: right; display: flex; justify-content: space-around;">
+                <div class="navigation-item navigation-item-selected"><a href="index.html">Home</a></div>
+                <div class="navigation-item"><a>About</a></div>
+                <div class="navigation-item"><a href="resume.html">Resume</a></div>
+            </div>
         </div>
 
         <!--Content-->
-        <div style="width: 100%; height: 100%;">
-            <div style="width: 50%; height: 100%; float: left; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <div style="margin-bottom: 10px;">
-                    <div id="name">
-                        <span id="firstname">Khalid</span>
-                        <span id="lastname">Awil</span>            
+        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+            <div style="width: 60%; display: flex; justify-content: space-around; align-items: center;">
+                <div style="text-align: center; width: 48%;">
+                    <div id="name">Khalid Awil</div>
+                    <div id="title">Software Developer</div>
+                </div>
+                <div style="width: 2%;"><div id="divider"></div></div>
+                <div style="width: 48%; display: flex; justify-content: center; align-items: center;">
+                    <div id="resume-link">
+                        <div><a href="/resume.html">View Resume</a></div>
+                        <!-- <i style="margin-left: 7px;" class="fas fa-arrow-right"></i> -->
                     </div>
-                    <!-- <div id="dark-blue-line"></div>
-                    <div id="blue-line"></div>
-                    <div id="yellow-line"></div> -->
-                </div>
-    
-                <!-- <div id="divider"></div> -->
-    
-                <div id="title">
-                  Software <span style="font-weight: 100;">Developer</span>
                 </div>
             </div>
-            <div  style="width: 50%; height: 100%; float: right; display: flex; justify-content: center; align-items: center;">
-                <div id="resume-link" ><a href="/resume.html">See Resume</a></div>
-            </div>
-            <div style="clear: both;"></div>
         </div>
     </body>
 </html>
