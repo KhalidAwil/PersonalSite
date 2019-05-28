@@ -15,18 +15,25 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
-#navigation{
+#navigation-outer{
     width: 100%;
     height: 40px;
     padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navigation-inner{
+    width: 250px; 
+    display: flex; 
+    justify-content: space-around;
+    margin-right: 40px;
 }
 
 .navigation-item{
     font-size: 14pt;
     padding: 2px;
-    float: right;
-    color: #888;
-    margin-right: 5px;
+    color: #AAA;
     font-weight: 300;
     -webkit-transition: color 0.15s; /* Safari */
     transition: color 0.15s;
@@ -49,22 +56,44 @@ a, a:visited, a:hover, a:active {
 }
 
 #content{
-    /* width: 100%;
-    height: 100%; */
-    /* background: hsl(218, 74%, 24%);
-    color: white; */
-    color: black
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
-#content-title{
+#work-content{
+}
+
+#skills-content{
+    margin-bottom: 10px;
+}
+
+#skill-list{
+    margin-left: 100px;
+    margin-top: 5px;
+    display: flex;
+    padding: 15px;
+}
+
+.skill-item{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 13pt;
+}
+
+.skill-item-title{
+    font-weight: bold;
+}
+
+.content-title{
     font-size: 20pt;
     font-weight: bold;
     margin-left: 50px;
     padding: 10px;
+    display: flex;
 }
 
 .spacer{
-    width: 50px;
+    width: 60px;
 }
 
 .resume-item{
@@ -112,7 +141,7 @@ a, a:visited, a:hover, a:active {
 
 .resume-item-duration{
     font-size: 10.5pt;
-    margin-bottom: 5px;
+    font-weight: 300;
 }
 
 .resume-item-desc{
@@ -132,11 +161,22 @@ a, a:visited, a:hover, a:active {
 .resume-item-tech{
     margin-bottom: 5px;
     font-size: 10pt;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-used{
+    margin-right: 5px;
+    float: left; 
+    font-weight: bold;
+    padding: 4px;
+    padding-left: 0px;
 }
 
 .tech-item{
     border-radius: 20px;
-    padding: 6px;
+    padding: 4px;
     /* background: hsl(218, 42%, 46%); */
     margin-right: 5px;
     float: left;
@@ -148,7 +188,74 @@ a, a:visited, a:hover, a:active {
 .tech-item-dot{
     border-radius: 50%;
     background: hsl(218, 42%, 46%);
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     margin-right: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+    #navigation-outer{
+        justify-content: center;
+    }
+
+    #navigation-inner{
+        margin-right: -15px;
+    }
+
+    .content-title{
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        font-size: 18pt;
+    }
+
+    #skill-list{
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .skill-item{
+        font-size: 11.5pt;
+    }
+
+    .resume-item-company{
+        font-size: 15pt;
+    }
+
+    .resume-item{
+        margin-right: 200px;
+    }
+
+    .resume-item-desc{
+        max-width: 500px;
+    }
+    .spacer{
+        width: 5px;
+    }
+
+    .tech-item{
+        margin-bottom: -5px;
+        font-size: 9.5pt;
+    }
+
+    .tech-used{
+        font-size: 9.5pt;
+    }
+
+    .resume-item-desc ul li{
+        font-size: 9.5pt;
+    }
+}
+
+
+@media only screen and (max-width: 630px) {
+    .resume-item-desc{
+        padding-right: 30px;
+    }
+
+    .resume-item-tech{
+        /* flex-direction: column; */
+        align-content: flex-start;
+        align-items: flex-start;
+    }
 }

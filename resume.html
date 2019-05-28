@@ -11,155 +11,202 @@
 
 <body>
     <!--Navigation-->
-    <div id="navigation">
-        <div style="width: 250px; margin-right: 50px; float: right; display: flex; justify-content: space-around;">
+    <div id="navigation-outer">
+        <div id="navigation-inner">
             <div class="navigation-item"><a href="index.html">Home</a></div>
-            <div class="navigation-item"><a>About</a></div>
             <div class="navigation-item navigation-item-selected"><a href="resume.html">Resume</a></div>
+            <div class="navigation-item"><a href="about.html">About</a></div>
         </div>
     </div>
 
-    <!--Content-->
+    <!--Main Content-->
     <div id="content">
-        <div id="content-title">Work Experience</div>
 
-        <!--OwnersBox-->
-        <div class="resume-item">
-            <div class="spacer"></div>
-            <!--Dot & Line-->
-            <div style="width: 100px; margin-left: 10px; display: flex; justify-content: center;">
+        <!--Skills Content-->
+        <div id="skills-content">
+            <div class="content-title">Skills</div>
+            <div id="skill-list">
                 <div>
-                    <div class="dot" style="margin-top: 25px;"></div>
-                    <div class="line"></div>
+                    <div class="skill-item"><span class="skill-item-title">Languages:</span> Java, JavaScript, C#, C++, VB.NET</div>
+                    <div class="skill-item"><span class="skill-item-title">Web Technologies & Frameworks: </span>Vue.JS, AngularJS, SASS, ASP.NET</div>
+                    <div class="skill-item"><span class="skill-item-title">Database:</span> PostgreSQL, Firebase, Oracle, IBM DB2</div>
+                    <div class="skill-item"><span class="skill-item-title">Versioning:</span> Git</div>
+                    <div class="skill-item"><span class="skill-item-title">Design Tools:</span> Adobe XD, Figma, Sketch, Adobe Illustrator, Adobe Photoshop</div>
                 </div>
             </div>
 
-            <!--Item Content-->
-            <div class="resume-item-content">
-                <div class="resume-item-company">OwnersBox</div>
-                <div class="resume-item-duration">September 2017 - March 2019</div>
-                <div class="resume-item-tech">
-                    <div style="margin-right: 5px; float: left; margin-top: 7px;">Technologies Used: </div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>Vue.js</div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>Adobe Photoshop</div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>Adobe XD</div>
-                    <div style="clear: both;"></div>
-                </div>
-                <div class="resume-item-desc">
-                    <ul>
-                        <li>Created the OwnersBox Fantasy Sports Tracker web application using Vue.js.</li>
-                        <li>Created wireframes, mockups and prototypes using Adobe Photoshop and Figma, which
-                            lead to the final design of the web application.</li>
-                        <li>Integrated open source software and libraries such as SASS and Highcharts to improve code
-                            structure and enrich the user experience.</li>
-                    </ul>
-                </div>
-            </div>
         </div>
+        
+        <!--Work Experience Content-->
+        <div id="work-content">
+            <div class="content-title">Work Experience</div>
 
-        <!--Site-Secure-->
-        <div class="resume-item">
-            <div class="spacer"></div>
-            <!--Dot & Line-->
-            <div style="width: 100px; margin-left: 10px; display: flex; justify-content: center;">
-                <div>
-                    <div class="line" style="height: 26px;"></div>
-                    <div class="dot"></div>
-                    <div class="line" style="height: calc(100% - 40px);"></div>
-                </div>
-            </div>
-
-            <!--Item Content-->
-            <div class="resume-item-content">
-                <div class="resume-item-company">Site-Secure</div>
-                <div class="resume-item-duration">May 2016 - August 2016</div>
-                <div class="resume-item-tech">
-                    <div style="margin-right: 5px; float: left; margin-top: 7px;">Technologies Used: </div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>C#</div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>VB.NET</div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>ASP.NET</div>
-                    <div style="clear: both;"></div>
-                </div>
-                <div class="resume-item-desc">
-                    <ul>
-                        <li>Created web applications and webforms using C#, VB.NET and ASP.NET,
-                            which were used to effectively streamline operations at security desk kiosks.
-                        </li>
-                        <li>Interacted directly with clients onsite and remotely to retrieve
-                            requirements and troubleshoot their issues and determine solutions.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!--Embotics-->
-        <div class="resume-item">
-            <div class="spacer"></div>
-            <!--Dot & Line-->
-            <div style="width: 100px; margin-left: 10px; display: flex; justify-content: center;">
-                <div>
-                    <div class="line" style="height: 26px;"></div>
-                    <div class="dot"></div>
-                    <div class="line" style="height: calc(100% - 40px);"></div>
-                </div>
-            </div>
-
-            <!--Item Content-->
-            <div class="resume-item-content">
-                <div class="resume-item-company">Embotics</div>
-                <div class="resume-item-duration">September 2015 - December 2015</div>
-                <div class="resume-item-tech">
-                    <div style="margin-right: 5px; float: left; margin-top: 7px;">Technologies Used: </div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>C#</div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>Telerik Test Studio</div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>Bugzilla</div>
-                    <div class="tech-item"><div class="tech-item-dot"></div>Testopia</div>
-                    <div style="clear: both;"></div>
-                </div>
-                <div class="resume-item-desc">
-                    <ul>
-                        <li>Created and executed automated test plans and scripts for testing critical components of
-                            Embotics’ vCommander using the automation test suite Telerik Test Studio and C#.</li>
-                        <li>Used Bugzilla to log and verify defects across vCommander and utilized
-                            Testopia to detail test cases for manual and automated testing.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!--Ciena-->
-        <div class="resume-item">
+            <!--OwnersBox-->
+            <div class="resume-item">
                 <div class="spacer"></div>
                 <!--Dot & Line-->
                 <div style="width: 100px; margin-left: 10px; display: flex; justify-content: center;">
                     <div>
-                        <div class="line" style="height: 26px;"></div>
-                        <div class="dot"></div>
-                        <div class="line" style="height: calc(100% - 40px);"></div>
+                        <div class="dot" style="margin-top: 25px;"></div>
+                        <div class="line"></div>
                     </div>
                 </div>
-    
+
                 <!--Item Content-->
                 <div class="resume-item-content">
-                    <div class="resume-item-company">Ciena</div>
-                    <div class="resume-item-duration">January 2015 - April 2015</div>
+                    <div class="resume-item-company">OwnersBox</div>
+                    <div class="resume-item-duration">September 2017 - March 2019</div>
                     <div class="resume-item-tech">
-                        <div style="margin-right: 5px; float: left; margin-top: 7px;">Technologies Used: </div>
-                        <div class="tech-item"><div class="tech-item-dot"></div>Java</div>
-                        <div class="tech-item"><div class="tech-item-dot"></div>JUnit</div>
-                        <div style="clear: both;"></div>
+                        <div class="tech-used">Technologies Used: </div>
+                        <div class="tech-item">
+                            <div class="tech-item-dot" style="background: #41B883;"></div>Vue.js
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-dot" style="background: #29CBFA;""></div>Adobe Photoshop</div>
+                        <div class=" tech-item">
+                                <div class="tech-item-dot" style="background: #FC2BC1;"></div>Figma
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                        <div class="resume-item-desc">
+                            <ul>
+                                <li>Created the OwnersBox Fantasy Sports Tracker web application using Vue.js.</li>
+                                <li>Created wireframes, mockups and prototypes using Adobe Photoshop and Figma, which
+                                    lead to the final design of the web application.</li>
+                                <li>Integrated open source software and libraries such as SASS and Highcharts to improve
+                                    code
+                                    structure and enrich the user experience.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resume-item-desc">
-                        <ul>
-                            <li>Investigated JUnit test failures for builds of the Ciena OneControl application 
-                                and detailed the cause(s) of the failures for developers.</li>
-                            <li>Simulated and tested shell script commands for OneControl node 
-                                simulation to ensure functionality.</li>
-                        </ul>
+                </div>
+
+                <!--Site-Secure-->
+                <div class="resume-item">
+                    <div class="spacer"></div>
+                    <!--Dot & Line-->
+                    <div style="width: 100px; margin-left: 10px; display: flex; justify-content: center;">
+                        <div>
+                            <div class="line" style="height: 26px;"></div>
+                            <div class="dot"></div>
+                            <div class="line" style="height: calc(100% - 40px);"></div>
+                        </div>
+                    </div>
+
+                    <!--Item Content-->
+                    <div class="resume-item-content">
+                        <div class="resume-item-company">Site-Secure</div>
+                        <div class="resume-item-duration">May 2016 - August 2016</div>
+                        <div class="resume-item-tech">
+                            <div class="tech-used">Technologies Used: </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: #0079FF;"></div>C#
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: #68217A;"></div>VB.NET
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: #3665AF;"></div>ASP.NET
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                        <div class="resume-item-desc">
+                            <ul>
+                                <li>Created web applications and webforms using C#, VB.NET and ASP.NET,
+                                    which were used to effectively streamline operations at security desk kiosks.
+                                </li>
+                                <li>Interacted directly with clients onsite and remotely to retrieve
+                                    requirements and troubleshoot their issues and determine solutions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Embotics-->
+                <div class="resume-item">
+                    <div class="spacer"></div>
+                    <!--Dot & Line-->
+                    <div style="width: 100px; margin-left: 10px; display: flex; justify-content: center;">
+                        <div>
+                            <div class="line" style="height: 26px;"></div>
+                            <div class="dot"></div>
+                            <div class="line" style="height: calc(100% - 40px);"></div>
+                        </div>
+                    </div>
+
+                    <!--Item Content-->
+                    <div class="resume-item-content">
+                        <div class="resume-item-company">Embotics</div>
+                        <div class="resume-item-duration">September 2015 - December 2015</div>
+                        <div class="resume-item-tech">
+                            <div class="tech-used">Technologies Used: </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: #0079FF;"></div>C#
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: orange"></div>Telerik Test Studio
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: #F6C37A;"></div>Bugzilla
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot"></div>Testopia
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                        <div class="resume-item-desc">
+                            <ul>
+                                <li>Created and executed automated test plans and scripts for testing critical
+                                    components of
+                                    Embotics’ vCommander using the automation test suite Telerik Test Studio and C#.
+                                </li>
+                                <li>Used Bugzilla to log and verify defects across vCommander and utilized
+                                    Testopia to detail test cases for manual and automated testing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Ciena-->
+                <div class="resume-item">
+                    <div class="spacer"></div>
+                    <!--Dot & Line-->
+                    <div style="width: 100px; margin-left: 10px; display: flex; justify-content: center;">
+                        <div>
+                            <div class="line" style="height: 26px;"></div>
+                            <div class="dot"></div>
+                            <div class="line"
+                                style="height: calc(100% - 40px); background-image: linear-gradient(hsl(218, 42%, 46%), white);">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Item Content-->
+                    <div class="resume-item-content">
+                        <div class="resume-item-company">Ciena</div>
+                        <div class="resume-item-duration">January 2015 - April 2015</div>
+                        <div class="resume-item-tech">
+                            <div class="tech-used">Technologies Used: </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: #E61F24;"></div>Java
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-item-dot" style="background: #249D5F;"></div>JUnit
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                        <div class="resume-item-desc">
+                            <ul>
+                                <li>Investigated JUnit test failures for builds of the Ciena OneControl application
+                                    and detailed the cause(s) of the failures for developers.</li>
+                                <li>Simulated and tested shell script commands for OneControl node
+                                    simulation to ensure functionality.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 </body>
 
 </html>
