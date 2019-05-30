@@ -55,21 +55,8 @@ a, a:visited, a:hover, a:active {
     color: black;
 }
 
-#content{
-    /* display: flex;
-    flex-wrap: wrap; */
-}
-
-#work-content{
-}
-
-#skills-content{
-    margin-bottom: 10px;
-}
-
 #skill-list{
     margin-left: 100px;
-    margin-top: 5px;
     display: flex;
     padding: 15px;
 }
@@ -82,6 +69,18 @@ a, a:visited, a:hover, a:active {
 
 .skill-item-title{
     font-weight: bold;
+}
+
+#education-content{
+    margin-bottom: 10px;
+}
+
+#education-item{
+    margin-left: 100px; 
+    font-size: 12pt; 
+    font-weight: 400;
+    display: flex;
+    padding: 15px;
 }
 
 .content-title{
@@ -102,13 +101,19 @@ a, a:visited, a:hover, a:active {
     min-height: 200px;
 }
 
+.resume-item-dot-line{
+    width: 100px; 
+    margin-left: 10px; 
+    display: flex; 
+    justify-content: center;
+}
+
 .dot{
     border-radius: 50%;
     border: 3px solid hsl(218, 42%, 46%);
     width: 12px;
     height: 12px;
     background: white;
-    /* border: 2px solid hsl(218, 50%, 63%); */
 }
 
 .line{
@@ -120,7 +125,7 @@ a, a:visited, a:hover, a:active {
 
 .resume-item-content{
     padding: 15px;
-    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .resume-item-company{
@@ -199,7 +204,7 @@ a, a:visited, a:hover, a:active {
     }
 
     #navigation-inner{
-        margin-right: -15px;
+        margin-right: 0px;
     }
 
     .content-title{
@@ -207,6 +212,11 @@ a, a:visited, a:hover, a:active {
         margin-top: 20px;
         margin-left: 0px;
         font-size: 18pt;
+    }
+
+    #education-item{
+        margin-left: 0;
+        justify-content: center;
     }
 
     #skill-list{
@@ -223,12 +233,20 @@ a, a:visited, a:hover, a:active {
     }
 
     .resume-item{
-        margin-right: 200px;
+        justify-content: center;
     }
 
     .resume-item-desc{
         max-width: 500px;
     }
+
+    .resume-item-dot-line{
+        width: 60px; 
+        margin-left: 10px; 
+        display: flex; 
+        justify-content: center;
+    }
+
     .spacer{
         width: 5px;
     }

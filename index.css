@@ -64,6 +64,8 @@ body{
 
 #content-inner{
     width: 80%; 
+    padding: 10px;
+    height: 300px;
     display: flex; 
     justify-content: space-around; 
     align-items: center;
@@ -71,19 +73,27 @@ body{
 
 #me{
     text-align: center; 
-    width: 50%;
+    width: 48%;
     /* background: teal; */
 }
 
-#divider-shell{
+#divider-outer{
     width: 10%;
     display: flex;
+    height: 100%;
     justify-content: center;
     /* background: tomato; */
 }
 
+#divider-inner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #view-resume-btn{
-    width: 40%; 
+    width: 42%; 
     display: flex; 
     justify-content: center;
     /* background: pink;  */
@@ -91,20 +101,55 @@ body{
 }
 
 #name{
-    font-size: 45pt;
+    font-size: 40pt;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
 }
 
 #title{
-    font-size: 23pt;
+    font-size: 20pt;
     font-weight: 300;
 }
 
 .divider{
-    width: 8px;
+    width: 5px;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-transition:  height 0.09s;
+    transition:  height 0.09s;
+    transition-timing-function: ease-in-out;
+}
+
+.divider:hover{
+    cursor: pointer;
+}
+
+#divider-top{
+    background: hsl(218, 100%, 83%);
+}
+
+#divider-top:hover{
+    height: 200px;
+}
+
+#divider-mid{
+    background: hsl(219, 46%, 57%);
     height: 150px;
+}
+
+#divider-mid:hover{
+    height: 170px;
+}   
+
+#divider-bot{
+    background: hsl(218, 45%, 35%);
+    height: 100px;
+}
+
+#divider-bot:hover{
+    height: 120px;
 }
 
 #links{
@@ -196,8 +241,56 @@ i.far {
         font-size: 18pt;
     }
 
-    #divider-shell{
-        display: none;
+    #divider-outer{
+        width: 100%;
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+
+    #divider-inner{
+        width: 200px;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .divider{
+        width: 200px;
+        height: 3px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        -webkit-transition: width 0.09s; /* Safari */
+        transition:  width 0.09s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #divider-top{
+        width: 200px;
+        height: 3px;
+    }
+
+    #divider-top:hover{
+        width: 220px;
+        height: 3px;
+    }
+
+    #divider-mid{
+        width: 150px; 
+        height: 3px;
+    }
+
+    #divider-mid:hover{
+        width: 170px;
+        height: 3px;
+    }
+
+    #divider-bot{
+        width: 100px;
+        height: 3px;
+    }
+
+    #divider-bot:hover{
+        width: 120px;
+        height: 3px;
     }
 
     #view-resume-btn{

@@ -75,14 +75,35 @@ a, a:visited, a:hover, a:active {
     margin-bottom: 60px;
 }
 
+#about-title{
+    display: flex;
+    justify-content: flex-start;
+}
+
 #about-title-item{
    font-size: 30pt; 
    font-weight: bold;
 }
 
 .divider{
-    width: 160px;
-    height: 6px;
+    width: 130px;
+    height: 2px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+#divider-top{
+    background: hsl(218, 78%, 75%);
+}
+
+#divider-mid{
+    background: hsl(219, 46%, 57%); ;
+    width: 100px;
+}
+
+#divider-bot{
+    background: hsl(218, 45%, 35%);
+    width: 70px;
 }
 
 .about-subitem{
@@ -159,15 +180,13 @@ i.far {
         padding-right: 20px;
     }
 
-    #about-title-item{
-        display: flex;
+    #about-title{
         justify-content: center;
-        flex-direction: column;
     }
 
     .about-subitem{
         font-size: 14pt;
-        text-align: center;
+        text-align: left;
     }
 
     #about-social-list{
